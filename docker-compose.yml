@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+
+  referencedb:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+
+  pgsysintegrator.api:
+    image: ${DOCKER_REGISTRY-}pgsysintegratorapi
+    build:
+      context: .
+      dockerfile: Services/PGSysIntegrator.API/Dockerfile

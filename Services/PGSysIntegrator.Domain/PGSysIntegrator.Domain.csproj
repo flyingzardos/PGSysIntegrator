@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\Reference\MaximoCoreLocations.cs" />
+    <Compile Remove="Entities\Reference\PlantItemsTransferred.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Maximo\" />
+    <Folder Include="Entities\Reference\" />
+  </ItemGroup>
+
+</Project>
